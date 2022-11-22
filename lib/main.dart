@@ -2,10 +2,8 @@
 import 'package:flutter/material.dart';
 
 //Pages
-import 'package:clima/src/pages/home_page.dart';
-import 'package:clima/src/pages/profile_dos.dart';
-import 'package:clima/src/pages/profile_uno.dart';
 
+import 'package:clima/src/pages/profile_dos.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -16,9 +14,7 @@ class MyApp extends StatelessWidget {
      debugShowCheckedModeBanner: false,
      initialRoute: 'profile2',
      routes: <String, WidgetBuilder>{
-       //'home': (BuildContext context) => HomePage(),
-       'profile1': (BuildContext context) => ProfileUno(),
-       'profile2': (BuildContext context) => ProfileDos()
+        'profile2': (BuildContext context) => ProfileDos()
       },
       
     );
